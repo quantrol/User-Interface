@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	max-width: 100%;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,6 +49,7 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
+
     box-sizing: border-box;
 }
 
@@ -66,29 +67,99 @@ h1, h2, h3, h4, h5 {
 /* Your code starts here! */
 * {
 	box-sizing:border-box;
-	border-width: 1px solid black;
 	padding:0;
 	margin:0;
 	max-width:100%; 
 	background: grey;
-	
+
 }
 
 .bigBox { 
-	width: auto;
+
+	justify-content: space-between;
+	width: 100%;
 	padding: 0 10%;
-	inline
+	
 }
 
 h1 {
-	 font-size: 100 px;
+	 font-size: 55px;
 }
+
+
 .firstRow{
+	display:flex;
+	justify-content: space-between;
 	width: auto;
-	display: inline-block;
-	margin: 0 6%;
+	margin: 0 auto;
+	padding: 20px;
+	
 }
+
 header{
-	text-align: center;
+	max-width: 100%;
+	justify-content: space-between;
 	padding: 11% 5%;
+	display:flex;
+	border-bottom: 2px solid black;
+}
+
+.features{
+	max-width: 45%;
+}
+
+.about{
+	max-width: 45%;
+}
+
+body {
+	padding: 2%;
+}
+
+img.middle-img{
+	justify-content: space-around;
+	padding: 2%;
+
+}
+.links a{
+	justify-content: center;
+	justify-content: space-between;
+	justify-content: space-around;
+	padding:20px;
+}
+.links{
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+.lowContent{
+	display:flex;
+	justify-content: space-between;
+	width: auto;
+	margin: 0 auto;
+	padding: 20px;
+	border-bottom: 2px solid black;
+}
+.contact {
+	line-height: 2;
+	
+}
+footer{
+	display:flex;
+	justify-content: center;
+	max-width: auto;
+	padding: 20px;
+}
+.btn {
+border: 2% solid black;
+}
+.leftHead {
+	max-width: 45%;
+}
+
+.logo{
+max-width: 45%;
+}
+.rightImg{
+	max-width: 45%;
 }
